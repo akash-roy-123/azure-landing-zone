@@ -1,0 +1,47 @@
+# Azure Landing Zone - Example Variables
+# Copy this file to terraform.tfvars and update with your values
+
+subscription_id   = "00000000-0000-0000-0000-000000000000"
+tenant_id         = "00000000-0000-0000-0000-000000000000"
+location          = "eastus"
+environment       = "production"
+organization_name = "contoso"
+
+# Network Configuration
+hub_address_space = ["10.0.0.0/16"]
+
+spoke_networks = {
+  "spoke-app" = {
+    address_space = ["10.1.0.0/16"]
+  }
+  "spoke-data" = {
+    address_space = ["10.2.0.0/16"]
+  }
+}
+
+# Feature Flags
+enable_azure_firewall      = true
+enable_vpn_gateway         = false
+enable_managed_identities  = true
+enable_rbac                = true
+enable_policy_assignments  = true
+enable_blueprints          = false
+enable_key_vault           = true
+enable_ddos_protection     = false
+enable_application_insights = true
+
+# Monitoring
+log_retention_days = 30
+
+# Multi-Region (Optional)
+enable_multi_region = false
+secondary_location  = "westus"
+
+# Common Tags
+common_tags = {
+  Environment = "production"
+  Project     = "Azure Landing Zone"
+  CostCenter  = "IT"
+  Owner       = "DevOps Team"
+}
+
