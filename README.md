@@ -2,7 +2,7 @@
 
 Production-ready Terraform modules for Azure Landing Zone implementation following Cloud Adoption Framework (CAF) best practices. This implementation supports multi-region deployments and provides a secure, scalable foundation for enterprise cloud infrastructure.
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 This Azure Landing Zone implements:
 
@@ -14,7 +14,7 @@ This Azure Landing Zone implements:
 - **Key Management**: Azure Key Vault for secrets management
 - **Multi-Region Support**: Deploy across multiple Azure regions
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 azure-landing-zone/
@@ -37,7 +37,7 @@ azure-landing-zone/
 └── README.md
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -77,7 +77,7 @@ azure-landing-zone/
    terraform apply
    ```
 
-## 📋 Features
+## Features
 
 ### Network Architecture
 - Hub-spoke topology with Azure Virtual WAN
@@ -109,7 +109,7 @@ azure-landing-zone/
 - Azure DDoS Protection
 - Security Center integration
 
-## 🔧 Configuration
+## Configuration
 
 ### Required Variables
 
@@ -126,7 +126,7 @@ azure-landing-zone/
 - `hub_address_space`: Hub network address space
 - `spoke_address_spaces`: List of spoke network address spaces
 
-## 📚 Modules
+## Modules
 
 ### Hub Network Module
 Central networking hub with Azure Firewall, VPN Gateway, and shared services.
@@ -146,7 +146,7 @@ Log Analytics, Application Insights, and monitoring dashboards.
 ### Security Module
 Key Vault, security policies, and threat protection.
 
-## 🎯 Use Cases
+## Use Cases
 
 - Enterprise cloud migration
 - Multi-tenant SaaS platforms
@@ -154,28 +154,28 @@ Key Vault, security policies, and threat protection.
 - Secure workload isolation
 - Centralized network management
 
-## 📖 Documentation
+## Documentation
 
 - [Architecture Guide](./docs/architecture.md)
 - [Deployment Guide](./docs/deployment.md)
 - [Security Best Practices](./docs/security.md)
 - [Troubleshooting](./docs/troubleshooting.md)
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please read our [Contributing Guide](./CONTRIBUTING.md) for details.
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
-## 👤 Author
+## Author
 
 **Akash Roy**
 - GitHub: [@akash-roy-123](https://github.com/akash-roy-123)
-- LinkedIn: [Akash Roy](https://linkedin.com/in/akash-roy)
+- LinkedIn: [Akash Roy](https://www.linkedin.com/in/akashroy05/)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Microsoft Cloud Adoption Framework (CAF)
 - Azure Architecture Center
